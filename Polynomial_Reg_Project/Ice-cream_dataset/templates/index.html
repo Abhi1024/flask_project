@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Selling Prediction</title>
+</head>
+<body>
+    <form method="post" action="{{url_for('predict')}}">
+        <input type="text" name="temp" placeholder="Temprature">
+        <input type="text" name="ice_unit" placeholder="ice_unit">
+        <label aria-placeholder="Polynomial Reg">{{predict}}</label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
